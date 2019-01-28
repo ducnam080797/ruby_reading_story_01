@@ -1,12 +1,1 @@
 en:
-  layouts:
-    header:
-      home: Home
-      category: Category
-      list: List
-      search: Search
-      help: Help
-      sign_up: Sign up
-      sign_in: Sign in
-    footer:
-      contact: Contact
