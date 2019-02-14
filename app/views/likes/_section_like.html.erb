@@ -1,0 +1,5 @@
+<% if @story.current_user_liked current_user %>
+  <%= render "dislike" %>
+<% else %>
+  <%= render "like" %>
+<% end %>

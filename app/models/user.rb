@@ -1,5 +1,6 @@
 class User < ApplicationRecord
   has_many :stories
+  has_many :interactives
   before_save :downcase_email, :downcase_account_name
   before_create :create_activation_digest
   attr_reader :remember_token, :activation_token

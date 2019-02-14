@@ -28,6 +28,7 @@ class StoriesController < ApplicationController
 
   def show
     @chapters = @story.chapters
+    @interactive = @story.interactives.build
   end
 
   def edit

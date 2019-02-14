@@ -10,7 +10,13 @@
   </div>
 </div>
 <div id="section-like-follow" class="row py-3 mt-5">
-  <button type="button" class="btn btn-primary"><%= t ".like" %></button>
+  <% if logged_in? %>
+    <% if @story.current_user_liked current_user %>
+      <%= render "likes/dislike" %>
+    <% else %>
+      <%= render "likes/like" %>
+    <% end %>
+  <% end %>
 </div>
 <div class="row mt-5">
   <div class="col-md-8 bg-info p-3">
@@ -26,6 +32,5 @@
     <p><%= t ".author" %>: <%= link_to @story.author_name, "#" %></p>
     <p><%= t ".progress" %>: <%= @story.progress_info %></p>
     <p><%= t ".categories" %>: <%= @story.category_info %></p>
-    <p><%= t ".liked" %>: <%= @story.liked %></p>
   </div>
 </div>

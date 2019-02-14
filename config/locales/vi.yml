@@ -55,6 +55,11 @@ vi:
   sessions:
     new:
       sign_in: Đăng nhập
+  likes:
+    like:
+      like: Like
+    dislike:
+      dislike: Dislike
   stories:
     edit:
       list_chapter: Các chương

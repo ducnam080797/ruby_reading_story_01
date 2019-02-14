@@ -72,6 +72,11 @@ en:
       save_chapter: Save chapter
     edit_chapter_form:
       update_chapter: Update chapter
+  likes:
+    like:
+      like: Like
+    dislike:
+      dislike: Dislike
   stories:
     show:
       story_info: Story Information
