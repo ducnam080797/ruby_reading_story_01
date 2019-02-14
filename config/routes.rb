@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   resources :account_activations, only: %i(edit)
   resources :stories
   resources :chapters
+  resources :likeds       
 end

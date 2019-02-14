@@ -27,7 +27,9 @@ class StoriesController < ApplicationController
   end
 
   def show
+    @story = Story.find_by id: params[:id]
     @chapters = @story.chapters
+    @liked = @story.liked.find_by user_id: current_user.id if current_user
   end
 
   def edit
