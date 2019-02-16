@@ -27,6 +27,7 @@ class StoriesController < ApplicationController
   end
 
   def show
+    @story = Story.find_by id: params[:id]
     @chapters = @story.chapters
     @interactive = @story.interactives.build
   end
